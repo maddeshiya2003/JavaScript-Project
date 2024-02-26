@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Changer</title>
+    <style>
+        body{
+            /* height: 100vh; */
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        #button{
+            margin-top: 45vh;
+            background-color: #808080;
+            padding: 7px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="button" >CLICK TO CHANGE</button> 
+    <script>
+        
+        const btn = document.getElementById("button");
+
+        // isse HAX value return karega
+
+        function randomColor(){
+            let val = "0123456789ABCDEF";
+            let cons = "#";
+            for(let i=0; i<6; i++){
+                cons = cons + val[Math.floor(Math.random() * 16)];
+            }
+            return cons;
+        }
+
+        function changeBackgroundColor(){
+            document.body.style.backgroundColor = randomColor(); // YAHA HAX VALUE AA RHA HAI randomColor FUNCTION ME
+        }
+    
+        btn.addEventListener("click", changeBackgroundColor)
+
+    </script>
+</body>
+</html>
