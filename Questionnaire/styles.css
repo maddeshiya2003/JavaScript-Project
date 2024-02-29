@@ -1,0 +1,50 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1 {
+    color: #008080;
+}
+
+/* Style for Questions and Inputs */
+.question {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for buttons */
+button[type="submit"] {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #005555;
+}
+
+/* Result Display Styles */
+.hidden {
+    display: none;
+}
